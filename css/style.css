@@ -1,0 +1,327 @@
+:root {
+    --primary-color: #343434;
+    --secondary-color: #1c1c1c;
+    --bg-color: #f7f7f7;
+    --padding-top: 100px;
+    --padding-bottom: 100px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span, a {
+    display: inline-block;
+}
+
+section {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+
+.heading {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 80px;
+    z-index: 11;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 30px;
+    bottom: -10px;
+    z-index: -1;
+}
+/*navbar*/
+nav .navbar-brand {
+    color: white;
+    font-size: 1.125rem;
+}
+
+nav .nav-link {
+    color: white !important;
+    font-size: .875rem;
+    position: relative;
+    padding: 0px !important;
+}
+
+nav .nav-link::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    transition: width .6s ease-in;
+}
+
+nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: 0px;
+}
+
+.navbar-toggler i {
+    color: white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        background: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav .nav-link {
+        color: #111 !important;
+    }
+}
+/*navbar*/
+/*main*/
+main {
+    background: linear-gradient(#000000ab,#000000ab), url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main .content {
+    color: white;
+}
+
+main .content h5 {
+    font-size: 3.125rem;
+    font-weight: 800;
+}
+
+
+main .content h1 {
+    font-size: 3.75rem;
+    font-weight: 200;
+}
+
+main .content h1 span {
+    font-weight: 400;
+}
+
+main .content a {
+    color: white !important;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    font-size: .875rem;
+    padding: 8px;
+}
+/*main*/
+/*About section*/
+.about .about-image {
+    position: relative;
+}
+
+.about .about-image::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+    bottom: -30px;
+    left: -20px;
+}
+
+.about .about-content h3 {
+    font-size: 1.875rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.about .about-content h3 > span {
+    color: #999;
+    font-size: .875rem;
+    letter-spacing: 2px;
+}
+
+.about .about-content p {
+    color: #748182;
+    font-size: .9375rem;
+    line-height: 25px;
+}
+
+.progress {
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    height: 1.5rem;
+    margin-top: 32px;
+}
+
+.about .progress-bar {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding-inline: 14px;
+}
+
+.about .btns a {
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: .8125rem;
+    transition: .5s ease-in;
+}
+
+.about .btns a:first-child {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.about .btns a:first-child:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.about .btns a:last-child:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+/*About section*/
+/*Services section*/
+.services {
+    background-color: var(--bg-color);
+}
+
+.services .service-box {
+    background: white;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 50px 42px;
+}
+
+.services .service-box i {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    font-size: 1.875rem;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in;
+}
+
+.services .service-box:hover i {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.services .service-box h5 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+.services .service-box p {
+    color: #748182;
+    font-size: .875rem;
+    word-spacing: 2px;
+    line-height: 24px;
+}
+/*Services section*/
+/*portfolio section*/
+.portfolio .box {
+    position: relative;
+}
+
+.portfolio .box-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/*portfolio section*/
+/*Testimonials section*/
+.testimonials {
+    background-color: var(--bg-color);
+}
+/*Testimonials section*/
+/*Counter section*/
+.counter .box i {
+    font-size: 1.875rem;
+    color: var(--primary-color);
+    margin-bottom: 18px;
+}
+
+.counter .box h5 {
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    margin-bottom: 14px;
+}
+
+.counter .box span {
+    color: #748182;
+    font-weight: 600;
+    font-size: 15px;
+}
+/*Counter section*/
+/*Our Team section*/
+.our-team {
+    background-color: var(--bg-color);
+}
+/*Our Team section*/
+/*Contact Us section*/
+.contact-us {
+
+}
+/*Contact Us section*/
+/*Footer*/
+footer {
+    padding: 30px;
+    background: var(--secondary-color);
+    color: white;
+}
+
+footer p {
+    color: #748182;
+    font-size: 13px;
+}
+/*Footer*/
