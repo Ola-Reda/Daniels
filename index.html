@@ -162,101 +162,215 @@
         <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2 class="heading">Portfolio.</h2>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All" type="button" role="tab" aria-controls="All" aria-selected="true">All</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Brand-tab" data-bs-toggle="tab" data-bs-target="#Brand" type="button" role="tab" aria-controls="Brand" aria-selected="false">Brand</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Design-tab" data-bs-toggle="tab" data-bs-target="#Design" type="button" role="tab" aria-controls="Design" aria-selected="false">Design</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Graphic-tab" data-bs-toggle="tab" data-bs-target="#Graphic" type="button" role="tab" aria-controls="Graphic" aria-selected="false">Graphic</button>
                     </li>
                 </ul>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="box">
-                            <div class="box-image">
-                                <img src="images/portfolio/1.jpg" class="img-fluid" alt="portfolio-image">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/1.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box-icons">
-                                <h6>WEB DESIGN</h6>
-                                <div class="icons">
-                                    <a href=""><i class="fa-solid fa-link"></i></a>
-                                    <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/2.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/3.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/4.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/5.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/6.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="box">
-                            <div class="box-image">
-                                <img src="images/portfolio/2.jpg" class="img-fluid" alt="portfolio-image">
+                    <div class="tab-pane fade" id="Brand" role="tabpanel" aria-labelledby="Brand-tab">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/4.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box-icons">
-                                <h6>WEB DESIGN</h6>
-                                <div class="icons">
-                                    <a href=""><i class="fa-solid fa-link"></i></a>
-                                    <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/6.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="box">
-                            <div class="box-image">
-                                <img src="images/portfolio/3.jpg" class="img-fluid" alt="portfolio-image">
+                    <div class="tab-pane fade" id="Design" role="tabpanel" aria-labelledby="Design-tab">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/2.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="box-icons">
-                                <h6>WEB DESIGN</h6>
-                                <div class="icons">
-                                    <a href=""><i class="fa-solid fa-link"></i></a>
-                                    <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/5.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="box">
-                            <div class="box-image">
-                                <img src="images/portfolio/4.jpg" class="img-fluid" alt="portfolio-image">
-                            </div>
-                            <div class="box-icons">
-                                <h6>WEB DESIGN</h6>
-                                <div class="icons">
-                                    <a href=""><i class="fa-solid fa-link"></i></a>
-                                    <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                    <div class="tab-pane fade" id="Graphic" role="tabpanel" aria-labelledby="Graphic-tab">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/1.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="box">
-                            <div class="box-image">
-                                <img src="images/portfolio/5.jpg" class="img-fluid" alt="portfolio-image">
-                            </div>
-                            <div class="box-icons">
-                                <h6>WEB DESIGN</h6>
-                                <div class="icons">
-                                    <a href=""><i class="fa-solid fa-link"></i></a>
-                                    <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/3.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="box">
-                            <div class="box-image">
-                                <img src="images/portfolio/6.jpg" class="img-fluid" alt="portfolio-image">
-                            </div>
-                            <div class="box-icons">
-                                <h6>WEB DESIGN</h6>
-                                <div class="icons">
-                                    <a href=""><i class="fa-solid fa-link"></i></a>
-                                    <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            <div class="col-md-4">
+                                <div class="box">
+                                    <div class="box-image">
+                                        <img src="images/portfolio/5.jpg" class="img-fluid" alt="portfolio-image">
+                                    </div>
+                                    <div class="box-icons">
+                                        <h6>WEB DESIGN</h6>
+                                        <div class="icons">
+                                            <a href=""><i class="fa-solid fa-link"></i></a>
+                                            <a href=""><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -314,6 +428,10 @@
             <div class="container">
                 <h2 class="heading">Our Team.</h2>
                 <div class="row"></div>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
             </div>
         </section>
         <!--Our Team section-->
