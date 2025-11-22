@@ -263,6 +263,29 @@ main .content a {
 }
 /*Services section*/
 /*portfolio section*/
+.portfolio .nav-tabs .nav-link {
+    color: #222;
+    font-weight: 700;
+    position: relative;
+    padding: 0;
+    margin-inline: 16px;
+}
+
+.portfolio .nav-tabs .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: #111;
+    transition: .4s ease-in;
+}
+
+.portfolio .nav-tabs .nav-link.active::after {
+    width: 100%;
+}
+
 .portfolio .box {
     position: relative;
     margin-bottom: 30px;
@@ -279,11 +302,54 @@ main .content a {
     width: 96%;
     height: 96%;
     opacity: 0;
-    transition: .5s ease-in;
+    transform: translateY(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .4s ease-in;
 }
 
 .portfolio .box:hover .box-icons {
     opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio .box-icons h6 {
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    transform: translateY(-15px);
+    transition: .4s ease-in;
+}
+
+.portfolio .box-icons .icons {
+    transform: translateY(10px);
+    transition: .4s ease-in;
+}
+
+.portfolio .box:hover h6, .portfolio .box:hover .icons {
+    transform: translateY(0px);
+}
+
+.portfolio .box-icons i {
+    background: #111;
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in;
+}
+
+.portfolio .box-icons i:hover {
+    background: transparent;
+    color: #111;
 }
 /*portfolio section*/
 /*Testimonials section*/
