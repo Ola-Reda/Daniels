@@ -356,6 +356,37 @@ main .content a {
 .testimonials {
     background-color: var(--bg-color);
 }
+
+.testimonials img {
+    width: 100px;
+    margin: auto;
+}
+
+.testimonials .carousel-indicators [data-bs-target] {
+    background: #d6d6d6;
+    border-radius: 50%;
+    width: 10px;
+    height: 8px;
+    border-width: 2px;
+} 
+
+.testimonials h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testimonials h5 + p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators .active {
+    background: #869791 !important;
+}
 /*Testimonials section*/
 /*Counter section*/
 .counter .box i {
@@ -381,11 +412,149 @@ main .content a {
 .our-team {
     background-color: var(--bg-color);
 }
+
+.our-team .image-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.our-team .team-box img {
+    transition: all .4s ease-in;
+}
+
+.our-team .team-box:hover img {
+    scale: 1.2;
+}
+
+.our-team .team-box .icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.95);
+    width: 96%;
+    height: 96%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    transform: rotateY(180deg) scale(0.3);
+    transition: .4s ease-in;
+}
+
+.our-team .team-box:hover .icons {
+    opacity: 1;
+    transform: rotateY(0) scale(1);
+}
+
+.our-team .team-box .icons i {
+    background: #111;
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-in;
+}
+
+.our-team .team-box .icons i:hover {
+    background: transparent;
+    color: #111;
+}
+
+.our-team .team-box .content-box {
+    background: rgba(52, 52, 52,.8);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+
+.our-team .team-box .content-box h5 {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.our-team .team-box .content-box h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 /*Our Team section*/
 /*Contact Us section*/
-/* .contact-us {
+.contact-us .box i {
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    font-size: 1.5625rem;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in;
+}
 
-} */
+.contact-us .box:hover i {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact-us .box h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.contact-us .box p {
+    color: #748182;
+    font-size: .9375rem;
+}
+
+.contact-us form input, .contact-us form textarea {
+    background-color: #f4f4f4 !important;
+    border: none;
+    border-radius: 5px !important;
+    color: var(--primary-color);
+}
+
+.contact-us form textarea {
+    height: 160px;
+    resize: none;
+}
+
+.contact-us form input::placeholder, .contact-us form textarea::placeholder {
+    color: #7d8181;
+    font-size: 14px;
+}
+
+.contact-us .form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.contact-us button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-size: .8125rem;
+    padding: 10px 40px;
+    border-width: 1px;
+    transition: .5s ease-in;
+}
+
+.contact-us button:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
 /*Contact Us section*/
 /*Footer*/
 footer {
