@@ -1,6 +1,6 @@
 # Daniels(portfolio)
 
-![Capture](https://github.com/user-attachments/assets/da5d1a3b-5db5-4e6f-81ba-db1387d49d97")
+![Capture](https://github.com/user-attachments/assets/da5d1a3b-5db5-4e6f-81ba-db1387d49d97)
 
 ## Live Demo
 
